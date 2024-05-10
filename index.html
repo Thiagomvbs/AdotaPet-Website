@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdotaPet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo " href="#">AdotaPet</a>
+            <ul class="nav-list">
+                <li class="nav-item" >
+                    <a class="about" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="produto" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="pets" href="#pets">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="contact" href="#contato">Contato</a>
+                </li>
+            </ul>
+            <div class="login">
+                <i  class="cart fa-solid fa-cart-shopping"></i>
+                <button class="btn-login">Login</button>
+                <i id="mode-icon" class="fa-solid fa-moon"></i>
+            </div>
+            
+            <button class="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item" >
+                    <a href="#about">Sobre</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="#pets">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+            <button class="btn-login">Login</button>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about section-container">
+            <div class="about-info">
+                <h1>Sobre a loja</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, ad officia tenetur, 
+                    repellendus et magni odio voluptatem reiciendis recusandae animi minus suscipit laborum, 
+                    dolorum quisquam cupiditate pariatur id quasi quia?
+                </p>
+                <button class="button-dark">Mais</button>
+            </div>
+            <div class="about-img">
+                <img class="info-img" src="./assets/imgs/foto_petshop.jpg" alt="Foto na foto_petshop">
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos section-produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="container-cards">
+                <div class="card">
+                    <img src="./assets/imgs/tigela_de_pet.jpg" alt="tigela de pet cheia">
+                    <div class="card-interaction">
+                            <div class="box">
+                                <ion-icon class="star st1" name="star"></ion-icon>              
+                                <ion-icon class="star st2" name="star"></ion-icon>                          
+                                <ion-icon class="star st3" name="star"></ion-icon>                           
+                                <ion-icon class="star st4" name="star"></ion-icon>                         
+                                <ion-icon class="star st5" name="star"></ion-icon>
+                            </div>
+                        <span class="card-favorite">
+                            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                            <ion-icon  id="heart" name="heart"></ion-icon>
+                        </span>
+                    </div>
+                    <h3>Produto</h3>
+                    <p>Descrição do produto</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/casa_de_pet.jpg" alt="casa de pet">
+                    <div class="card-interaction">
+                        <div class="box">
+                            <ion-icon class="star st1" name="star"></ion-icon>              
+                            <ion-icon class="star st2" name="star"></ion-icon>                          
+                            <ion-icon class="star st3" name="star"></ion-icon>                           
+                            <ion-icon class="star st4" name="star"></ion-icon>                         
+                            <ion-icon class="star st5" name="star"></ion-icon>
+                        </div>
+                        <span class="card-favorite">
+                            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                            <ion-icon  id="heart" name="heart"></ion-icon>
+                        </span>
+                    </div>
+                    <h3>Produto</h3>
+                    <p>Descrição do produto</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/brinquedos_pet.jpg" alt="brinquedos de pet">
+                    <div class="card-interaction">
+                        <div class="box">
+                            <ion-icon class="star st1" name="star"></ion-icon>              
+                            <ion-icon class="star st2" name="star"></ion-icon>                          
+                            <ion-icon class="star st3" name="star"></ion-icon>                           
+                            <ion-icon class="star st4" name="star"></ion-icon>                         
+                            <ion-icon class="star st5" name="star"></ion-icon>
+                        </div>
+                        <span class="card-favorite">
+                            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                            <ion-icon  id="heart" name="heart"></ion-icon>
+                        </span>
+                    </div>
+                    <h3>Produto</h3>
+                    <p>Descrição do produto</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/imgs/acessorios_pet.jpg" alt="brinquedos de pet">
+                    <div class="card-interaction">
+                        <div class="box">
+                            <ion-icon class="star st1" name="star"></ion-icon>              
+                            <ion-icon class="star st2" name="star"></ion-icon>                          
+                            <ion-icon class="star st3" name="star"></ion-icon>                           
+                            <ion-icon class="star st4" name="star"></ion-icon>                         
+                            <ion-icon class="star st5" name="star"></ion-icon>
+                        </div>
+                        <span class="card-favorite">
+                            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+                            <ion-icon  id="heart" name="heart"></ion-icon>
+                        </span>
+                    </div>
+                    <h3>Produto</h3>
+                    <p>Descrição do produto</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pets" class="pets section-pets">
+            <h2>Nossos Pets</h2>
+
+            <div class="cards-pets">
+                <div class="card-pet">
+                    <span class="img-animals">&#128021;</span>
+                    <div class="info-animal">
+                        <h3>Dog pet Visit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem modi. Eius atque dolor officiis esse architecto non aspernatur deserunt optio!</p>
+                        <button class="button-card">Mais</button>
+                    </div>
+                </div>
+                <div class="card-pet">
+                    <span class="img-animals">&#128008;</span>
+                    <div class="info-animal">
+                        <h3>Cat pet Visit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem modi. Eius atque dolor officiis esse architecto non aspernatur deserunt optio!</p>
+                        <button class="button-card">Mais</button>
+                    </div>
+                </div>
+                <div class="card-pet">
+                    <span class="img-animals">&#128037;</span>
+                    <div class="info-animal">
+                        <h3>Chick pet Visit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem modi. Eius atque dolor officiis esse architecto non aspernatur deserunt optio!</p>
+                        <button class="button-card">Mais</button>
+                    </div>
+                </div>
+                <div class="card-pet">
+                    <span class="img-animals">&#128031;</span>
+                    <div class="info-animal">
+                        <h3>Fish pet Visit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem modi. Eius atque dolor officiis esse architecto non aspernatur deserunt optio!</p>
+                        <button class="button-card">Mais</button>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section id="contato" class="contato section-contato">
+            <h1 class="contato-titulo">Entre em Contato</h1>
+            <form class="contato-form" action="">
+                <input name="nome" type="text" placeholder="Nome" required>
+                <input name="email" type="email" placeholder="E-mail" required>
+                <input name="descricao" type="text" placeholder="Descrição " required>
+                <textarea name="" id="" cols="50" rows="7" required placeholder="Sua mensagem"></textarea>
+                <button type="submit" class="contato-btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Grupo IBMR</p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

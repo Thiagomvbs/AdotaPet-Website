@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Inter' , sans-serif;
+    border: none;
+    transition: all .2s linear;
+}
+
+:root{
+    --cor-primaria: #faf3e0;
+    --cor-secundaria:#C7A58E;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0, 0.1);
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+    background: var(--cor-primaria);
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+.header{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    padding: 2rem 3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.logo{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.logo:hover{
+    transform:translateY(-2px); 
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 5rem
+}
+
+.nav-item{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-item a{
+    color: #000;
+    position: relative;
+}
+
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--cor-secundaria);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+ 
+.nav-item a:hover{
+    color: var(--cor-secundaria);
+} 
+
+.nav-item a:hover::after{
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.login i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.login .cart:hover{
+    color: #b9c0cf;
+    transform: translateY(-5px);
+}
+
+.login .btn-login{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: var(--cor-secundaria);
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    transition: .4s ease;
+}
+
+.login button:hover{
+   background-color: #d3bbab;
+}
+
+.mobile-btn{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/* Fim HEADER */
+
+/* INICIO MAIN */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.about-info{
+    max-width: 1200px;
+}
+
+.about-info h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.about-info p{
+    font-size: 2rem;
+    font-weight: 500;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.about-info button{
+    margin-top: 32px;
+    background: #232222;
+    max-width: 150px;
+    width: 40%;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .6s all;
+}
+
+.about-info button:hover{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.about-img img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.produtos h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.container-cards{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.card{
+    width: 250px;
+    margin-right: 2rem;
+}
+
+.produtos h2{
+    margin-bottom: 2rem;
+}
+
+.card img{
+    height: 250px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+.card-interaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.box{
+    display: flex;
+    direction: rtl;
+}
+
+.star{
+    color: #4e4949;
+    transition: 0.3s all;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.star:hover{
+    color: #f1c40f;
+}
+
+.st1:hover ~ ion-icon{
+    color: #f1c40f;
+}
+
+.st2:hover ~ ion-icon{
+    color: #f1c40f;
+}
+
+.st3:hover ~ ion-icon {
+    color: #f1c40f;
+}
+
+.st4:hover ~ ion-icon{
+    color: #f1c40f;
+}
+
+.st5:hover ~ ion-icon{
+    color: #f1c40f;
+}
+
+.card-favorite {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#cart{
+    color: #fff;
+    background-color: #000;
+    padding: .7rem;
+    border-radius: 50%;
+}
+
+#heart{
+    color: #8d9199;
+    background-color:#DDD;
+    padding: .7rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+}
+
+.card h3{
+    font-size: 2.5rem;
+}
+
+.card p{
+    font-size: 1.5rem;
+}
+/* FIM PRODUTOS */
+
+/* INICIO PETS */
+.pets h2{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+.cards-pets{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.card-pet{
+    background:#3e3e45;
+    width: 300px;
+    padding: 1.5rem; 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+}
+
+.img-animals{
+    background: var(--cor-primaria);
+    font-size: 3.5rem;
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-animal{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-animal h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.info-animal p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffffda;
+}
+
+.button-card{
+    width: 70%;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 15px;
+    background: var(--cor-primaria);
+    cursor: pointer;
+    transition: .6s;
+}
+
+.button-card:hover{
+    background: #6c6c7a;
+    color: #fffcfc;
+}
+
+.contato{
+    width: 100%;
+    background: #3e3e45;
+}    
+
+.contato-titulo{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 1200px;
+}
+
+.contato form input{
+    width: 50%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.contato form textarea{
+    resize: none;
+    width: 600px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.contato-btn{
+    width: 25%;
+    margin-top: 1rem;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    background: var(--cor-primaria);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.contato-btn:hover{
+    background: var(--cor-secundaria);
+}
+
+.footer{
+    padding: 3rem 2rem;
+}
+
+.footer p{
+    font-family: var(--fonte-Inter);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dark.header{
+    background-color:#503C3C;
+    color: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(47, 46, 46, 0.1);
+}
+
+.dark.logo,
+.dark.about,
+.dark.produto,
+.dark.pets,
+.dark.contact{
+    color: #fff;
+}
+
+
+.dark.section-container,
+.dark.section-produtos,
+.dark.section-pets,
+.dark.section-contato,
+.dark.footer
+{
+    color: #fff;
+    background-color: #3E3232;
+}
+
+
+.dark.button-dark{
+    background: #fff;
+    color: #000;
+    transition: .5s ease;
+}
+
+.dark.button-dark:hover{
+    border: 1px solid #000;
+    background: var(--cor-secundaria)
+}
+
+@media screen and (max-width:1170px) {
+    .mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+
+    }
+    
+    .btn-login{
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: var(--cor-secundaria);
+        border-radius: 12px;
+        color: #fff;
+        cursor: pointer;
+        padding: 1rem 1.5rem;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list, .login{
+        display: none;
+    }
+    /* Fim HEADER */
+    /* INICIO MAIN */
+    .about-img{
+        display: none;
+    }
+    
+    .about-info, .info-img{
+        width: 100%;
+    }
+    /* FIM MAIN */
+    /* INICIO PRODUTOS */
+    .produtos h2{
+        text-align: center;
+    }
+    .container-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* FIM PRODUTOS */
+    /* INICIO PETS */
+    .pets h2{
+        text-align: center;
+    }
+
+    .cards-pets{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contato-form textarea{
+        display: none;
+    }
+}
