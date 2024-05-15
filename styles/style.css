@@ -370,16 +370,16 @@ section{
     justify-content: center;
 }
 
-.contato form{
+.contato-form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     justify-content: end;
-    max-width: 1200px;
+    width: 100%;
 }
 
-.contato form input{
+.contato-form input{
     width: 50%;
     margin: 10px 0;
     padding: 12px;
@@ -387,9 +387,9 @@ section{
     font-size: 1.5rem;
 }
 
-.contato form textarea{
+.contato-form textarea{
     resize: none;
-    width: 600px;
+    width: 50%;
     padding: 10px;
     border-radius: 12px;
 }
@@ -437,14 +437,15 @@ section{
 
 .dark.section-container,
 .dark.section-produtos,
-.dark.section-pets,
-.dark.section-contato,
-.dark.footer
+.dark.section-pets
 {
     color: #fff;
     background-color: #3E3232;
 }
-
+.dark.section-contato{
+    background-color: #3e3e45;
+    color: #fff;
+}
 
 .dark.button-dark{
     background: #fff;
@@ -455,6 +456,10 @@ section{
 .dark.button-dark:hover{
     border: 1px solid #000;
     background: var(--cor-secundaria)
+}
+.dark.footer {
+    background-color: #503C3C;
+    color: #fff;
 }
 
 @media screen and (max-width:1170px) {
